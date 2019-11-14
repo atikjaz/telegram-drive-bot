@@ -9,12 +9,12 @@
   "author": "Yash Garg",
   "license": "MIT",
   "dependencies": {
-    "aria2": "^3.0.1",
+    "aria2": "^4.1.0",
     "diskspace": "^2.0.0",
-    "fs-extra": "^6.0.1",
-    "googleapis": "30.0.0",
+    "fs-extra": "^8.1.0",
+    "googleapis": "45.0.0",
     "http-range-parse": "^1.0.0",
-    "node-telegram-bot-api": "^0.30.0",
-    "tar": "^4.4.4"
+    "node-telegram-bot-api": "^0.40.0",
+    "tar": "^5.0.5"
   }
 }
