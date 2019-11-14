@@ -8,5 +8,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - name: set remote url
+      run: git remote set-url --push origin https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY
     - name: GitHub Action for package.json update.
       uses: taichi/actions-package-update@v0.5.0
+      env:
+        AUTHOR_EMAIL: ben10.yashgarg@gmail.com
+        AUTHOR_NAME: Yash-Garg 
+        EXECUTE: "true"
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        LOG_LEVEL: debug
+      with:
+        args: -u --packageFile package.json --loglevel verbose
