@@ -8,8 +8,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: set remote url
-      run: git remote set-url --push origin https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/Yash-Garg/telegram-drive-bot
     - name: GitHub Action for package.json update.
       uses: taichi/actions-package-update@v0.5.0
       env:
