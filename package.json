@@ -4,7 +4,7 @@
   "description": "A telegram bot to mirror files to Google Drive",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
     "test": "mocha test/*.js"
   },
   "author": "Yash Garg",
