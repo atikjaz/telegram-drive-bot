@@ -21,6 +21,7 @@ jobs:
       run: |
         npm ci
         npm install
-        npm start
+        npm install --save-dev mocha chai
+        npm run test
       env:
         CI: true
