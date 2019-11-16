@@ -23,5 +23,6 @@ jobs:
         npm install
         npm install --save-dev mocha chai
         npm test
+        exit
       env:
         CI: true
